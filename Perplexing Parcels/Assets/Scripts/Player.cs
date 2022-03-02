@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed = 12f;
-    float rbDrag = 0f;
+    float rbDrag = 6f;
     float horizontalMovement;
     float verticalMovement;
     Vector3 moveDirection;
@@ -42,6 +42,8 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (moveDirection == Vector3.zero) rbDrag = 100f;
+        else rbDrag = 1f;
         MovePlayer();
     }
 

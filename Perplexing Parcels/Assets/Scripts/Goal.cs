@@ -11,10 +11,9 @@ public class Goal : MonoBehaviour
         if (other.gameObject.tag == "Box")
         {
             Goal.goalMet = true;
+ //           Debug.Log(goalMet);
             Material mat = GetComponent<Renderer>().material;
-            Color c = mat.color;
-            c.a = 1;
-            mat.color = c;
+            mat.color = new Color(0.196f,1.0f, 0.196f);
         }
     }
 }
