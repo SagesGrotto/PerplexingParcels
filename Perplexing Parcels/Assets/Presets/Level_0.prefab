@@ -1380,13 +1380,18 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 44
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Push the box to the white goal space
+  m_Text: 'Push the box to the white goal space.
+
+    Use WASD to move and R to restart
+    the level.
+
+    Press Esc to exit the game.'
 --- !u!1 &9154208321479928206
 GameObject:
   m_ObjectHideFlags: 0
